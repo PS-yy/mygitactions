@@ -15,3 +15,11 @@ jobs:
 
       - name: Update Index HTML
         run: sed -i '/<\/body>/i <p>Updated by Team Leader on '"$(date)"'</p>' index.html
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@://github.com"
+          git add index.html
+          git commit -m "Automated update of index.html with timestamp"
+          git push
