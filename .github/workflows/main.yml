@@ -1,7 +1,6 @@
 name: Collaborative Workflow
 
 on:
-
  push:
   branches:
     -main
