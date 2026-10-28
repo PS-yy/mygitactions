@@ -3,7 +3,7 @@ name: Collaborative Workflow
 on:
  push:
   branches:
-    -main
+    - main
 
 
 jobs:
